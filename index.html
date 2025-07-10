@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恩德斯豪斯集团全球客户峰会</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: white;
+            background: linear-gradient(rgba(0, 82, 147, 0.85), rgba(0, 82, 147, 0.85));
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .slide-up {
+            animation: slideUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://space.coze.cn/s/qBGWfFmtDIw/?width_heigth=720x1280" alt="峰会背景" class="bg-image">
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- 标题部分 -->
+        <div class="text-center mb-16 slide-up" style="animation-delay: 0.1s;">
+            <h1 class="text-4xl font-bold mb-2 text-shadow">恩德斯豪斯集团</h1>
+            <h1 class="text-4xl font-bold mb-6 text-shadow">全球客户峰会</h1>
+            <div class="text-lg text-gray-200 text-left">
+                <p class="mb-4">在人工智能加速产业变革、全球碳中和进程深化、数字化韧性成为竞争分水岭的今天，企业如何借力技术浪潮实现可持续增长？</p>
+                <p>我们诚挚邀请您出席恩德斯豪斯集团全球客户峰会。本次大会特邀全球行业领袖与技术先锋，与您共同探索工业领域的未来发展方向。</p>
+            </div>
+        </div>
+
+        <!-- 核心探讨方向 -->
+        <div class="space-y-6 mb-16">
+            <div class="card p-8 slide-up" style="animation-delay: 0.2s;">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-robot text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">人工智能应用</h3>
+                </div>
+                <p class="text-gray-200">探索AI如何驱动生产力变革，解锁工业智能化的新潜能</p>
+            </div>
+
+            <div class="card p-8 slide-up" style="animation-delay: 0.4s;">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">可持续发展</h3>
+                </div>
+                <p class="text-gray-200">讨论工业绿色转型与生态变革带来的商业新机遇</p>
+            </div>
+
+            <div class="card p-8 slide-up" style="animation-delay: 0.6s;">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white mr-4">
+                        <i class="fas fa-digital-tachograph text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">数字化转型</h3>
+                </div>
+                <p class="text-gray-200">构建数字化韧性，推进B2B整合与智能系统协同</p>
+            </div>
+        </div>
+
+        <!-- 会议详情 -->
+        <div class="card p-8 mb-16 slide-up" style="animation-delay: 0.8s;">
+            <h3 class="text-xl font-bold mb-6 text-center">会议详情</h3>
+            <div class="space-y-4">
+                <div class="flex justify-between items-center pb-4 border-b border-gray-600">
+                    <div class="flex items-center">
+                        <i class="fas fa-calendar-alt text-blue-300 mr-3 text-lg"></i>
+                        <span class="font-medium">日期</span>
+                    </div>
+                    <span>2026年4月14-16日</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-300 mr-3 text-lg"></i>
+                        <span class="font-medium">地点</span>
+                    </div>
+                    <span>瑞士 · 巴塞尔</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 结束语 -->
+        <div class="text-center text-xl text-gray-200 slide-up" style="animation-delay: 1s;">
+            <p>让我们与值得信赖的合作伙伴一起，开启前沿洞察与落地实践的深度探讨！</p>
+        </div>
+    </div>
+
+    <footer class="py-8 text-center text-gray-300 text-sm">
+        <p>created by <a href="https://www.endress.com.cn/zh" class="text-blue-300 hover:text-blue-200">恩德斯豪斯</a></p>
+  
+    </footer>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
